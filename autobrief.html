@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoBrief — кейс</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto+Flex:opsz,wght@8..144,573;8..144,773&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page">
+    <header class="topbar">
+      <a class="topbar__home" href="./index.html" aria-label="На главную">
+        <h1 class="topbar__name">Тотоева Алина</h1>
+      </a>
+      <nav class="topbar__actions" aria-label="Ссылки">
+        <a class="button button--download" href="#" target="_blank" rel="noreferrer">
+          <span>Dropfile</span>
+          <img class="button__icon" src="./icon/link.svg" alt="" />
+        </a>
+        <a class="button" href="#" target="_blank" rel="noreferrer">
+          <span>Резюме</span>
+          <img class="button__icon" src="./icon/Down.svg" alt="" />
+        </a>
+        <a class="button button--primary" href="#" target="_blank" rel="noreferrer">
+          <span>AlinO34</span>
+          <img class="button__icon" src="./icon/Vector.svg" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="case case--detail">
+      <header class="case-hero case-hero--spaced">
+        <div class="case-hero__intro">
+          <ul class="chip-row chip-row--start case-hero__tags" aria-label="Направления проекта">
+            <li class="chip glass">UX/UI</li>
+            <li class="chip glass">Product</li>
+            <li class="chip glass">Meneger</li>
+          </ul>
+          <h2 class="case-hero__title">
+            Как я создавала сервис для автоматического конспектирования встреч AutoBrief
+          </h2>
+          <figure class="case-hero__cover case-image case-image--framed">
+            <img
+              class="case-image__img"
+              src="./images/figma-473/hero-cover.png"
+              alt="Обложка кейса AutoBrief"
+            />
+          </figure>
+        </div>
+      </header>
+
+      <div class="case__content case__content--sections">
+        <section class="case-section" aria-label="Задача">
+          <h3 class="case-section__title">Задача</h3>
+
+          <div class="case-section__stack">
+            <section class="case-subsection case-subsection--tight" aria-label="Контекст">
+              <h4 class="case-subsection__title">Контекст</h4>
+              <p class="case-text case-text--lead">
+                AutoBrief — B2B-сервис для автоматического конспектирования встреч: распознаёт
+                речь, превращает её в текст и помогает структурировать информацию.
+                <a class="case-link" href="https://autobrief.ru/" target="_blank" rel="noreferrer"
+                  >AutoBrief</a
+                >
+              </p>
+            </section>
+
+            <section class="case-subsection case-subsection--gap-24" aria-label="Задача проекта">
+              <h4 class="case-subsection__title">Задача</h4>
+              <div class="case-text case-text--lead">
+                <p>Спроектировать сервис для работы с аудио и видеозаписями, который:</p>
+                <ul class="case-list">
+                  <li>автоматически расшифровывает встречи</li>
+                  <li>помогает выделять ключевые тезисы</li>
+                  <li>позволяет формировать заметки и to-do</li>
+                  <li>упрощает поиск информации по встречам</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="case-subsection case-subsection--gap-24" aria-label="Этапы разработки">
+              <h4 class="case-subsection__title">Этапы разработки</h4>
+              <ol class="case-list case-list--ordered">
+                <li>
+                  <div class="case-list__item">
+                    <strong class="case-list__title">Анализ</strong>
+                    <span class="case-list__desc"
+                      >Выявила ключевые проблемы: сложный поиск, слабая структура, перегруженный
+                      интерфейс</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="case-list__item">
+                    <strong class="case-list__title">Гипотезы</strong>
+                    <span class="case-list__desc"
+                      >Определила направления: проекты, поиск по содержанию, AI</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="case-list__item">
+                    <strong class="case-list__title">Сценарии</strong>
+                    <span class="case-list__desc"
+                      >Спроектировала флоу работы со встречами и информацией</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="case-list__item">
+                    <strong class="case-list__title">Тестирование</strong>
+                    <span class="case-list__desc"
+                      >Проверила сценарии на прототипе, упростила навигацию</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="case-list__item">
+                    <strong class="case-list__title">Финальное решение</strong>
+                    <span class="case-list__desc"
+                      >Разработала интерфейс с фокусом на простоту и скорость</span
+                    >
+                  </div>
+                </li>
+              </ol>
+            </section>
+          </div>
+        </section>
+
+        <section class="case-section case-section--implement" aria-label="Анализ и проектирование">
+          <h3 class="case-section__title">Анализ и проектирование</h3>
+
+          <section class="case-subsection" aria-label="Разбор тз">
+            <h4 class="case-subsection__title case-subsection__title--xl">Разбор тз</h4>
+
+            <div class="case-cards">
+              <article class="info-card">
+                <header class="info-card__head">
+                  <span class="info-card__icon" aria-hidden="true">
+                    <img
+                      src="./images/figma-473/icon-user-circle.svg"
+                      alt=""
+                    />
+                  </span>
+                  <h5 class="info-card__title">Миссия для пользователя</h5>
+                </header>
+                <p class="info-card__text">
+                  Помочь пользователю быстро преобразовывать встречи в структурированную
+                  информацию: находить ключевые моменты, фиксировать выводы и формировать задачи
+                  без ручного конспектирования.
+                </p>
+              </article>
+
+              <article class="info-card">
+                <header class="info-card__head">
+                  <span class="info-card__icon" aria-hidden="true">
+                    <img
+                      src="./images/figma-473/icon-currency-btc.svg"
+                      alt=""
+                    />
+                  </span>
+                  <h5 class="info-card__title">Цели бизнеса</h5>
+                </header>
+                <p class="info-card__text">
+                  Создать сервис, который упрощает работу с большим количеством встреч, сокращает
+                  время на обработку информации и стимулирует регулярное использование за счёт
+                  AI‑функций.
+                </p>
+              </article>
+              <article class="info-card info-card--wide">
+                <header class="info-card__head">
+                  <span class="info-card__icon" aria-hidden="true">
+                    <img
+                      src="./images/figma-473/icon-users-three.svg"
+                      alt=""
+                    />
+                  </span>
+                  <h5 class="info-card__title">ЦА</h5>
+                </header>
+                <p class="info-card__text">
+                  Специалисты (Product / Project менеджеры, sales-специалисты, основатели и
+                  руководители) участвующие в онлайн-встречах и работающие над несколькими
+                  проектами, которым важно быстро находить информацию и не терять договорённости.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="case-subsection" aria-label="Бенчмаркинг">
+            <div class="case-subsection__container">
+              <h4 class="case-subsection__title case-subsection__title--xl">Бенчмаркинг</h4>
+              <div class="case-text case-text--muted case-text--stack">
+                <p>
+                  При работе над задачей были проанализированы зарубежные аналоги, такие как Descript
+                  и Monica.
+                </p>
+                <p>
+                  Цель — упростить существующие решения, сократить пользовательские сценарии и ускорить
+                  поиск информации во встречах.
+                </p>
+                <p>Фокус анализа:</p>
+                <ul class="case-list">
+                  <li>работа с записями встреч</li>
+                  <li>структура хранения</li>
+                  <li>поиск и навигация</li>
+                  <li>работа с расшифровкой</li>
+                  <li>AI-функции</li>
+                  <li>сложность интерфейса</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bench">
+              <article class="bench-card">
+                <header class="bench-card__head">
+                  <span class="bench-card__logo" aria-hidden="true">
+                    <img src="./images/figma-473/bench-descript-logo.png" alt="Descript" />
+                  </span>
+                  <h5 class="bench-card__name">Descript</h5>
+                </header>
+
+                <figure class="bench-card__shot">
+                  <img
+                    class="bench-card__img"
+                    src="./images/figma-473/bench-descript-shot.png"
+                    alt="Интерфейс Descript"
+                  />
+                </figure>
+
+                <div class="bench-card__cols">
+                  <ul class="badge-list" aria-label="Плюсы">
+                    <li class="badge-list__item badge-list__item--ok">глубокая работа с расшифровкой</li>
+                    <li class="badge-list__item badge-list__item--ok">мощные AI-инструменты</li>
+                    <li class="badge-list__item badge-list__item--ok">точечное редактирование</li>
+                  </ul>
+                  <ul class="badge-list" aria-label="Минусы">
+                    <li class="badge-list__item badge-list__item--no">перегруженный интерфейс</li>
+                    <li class="badge-list__item badge-list__item--no">высокий порог входа</li>
+                    <li class="badge-list__item badge-list__item--no">
+                      слабый фокус на “работе со встречами как сущностью”
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="callout callout--note">
+                  <span class="callout__icon" aria-hidden="true">
+                    <img src="./images/figma-473/icon-fixer.svg" alt="" />
+                  </span>
+                  <p class="callout__text">
+                    Вывод: инструмент для продакшена контента, а не для повседневной работы с встречами
+                  </p>
+                </div>
+              </article>
+
+              <article class="bench-card">
+                <header class="bench-card__head">
+                  <span class="bench-card__logo" aria-hidden="true">
+                    <img src="./images/figma-473/bench-screenapp-logo.png" alt="ScreenApp" />
+                  </span>
+                  <h5 class="bench-card__name">ScreenApp</h5>
+                </header>
+
+                <figure class="bench-card__shot">
+                  <img
+                    class="bench-card__img"
+                    src="./images/figma-473/bench-screenapp-shot.png"
+                    alt="Интерфейс ScreenApp"
+                  />
+                </figure>
+
+                <div class="bench-card__cols">
+                  <ul class="badge-list" aria-label="Плюсы">
+                    <li class="badge-list__item badge-list__item--ok">простой сценарий записи</li>
+                    <li class="badge-list__item badge-list__item--ok">есть базовая структура (папки)</li>
+                    <li class="badge-list__item badge-list__item--ok">быстрый доступ к записям</li>
+                  </ul>
+                  <ul class="badge-list" aria-label="Минусы">
+                    <li class="badge-list__item badge-list__item--no">ограниченная работа с инсайтами</li>
+                    <li class="badge-list__item badge-list__item--no">слабая AI-логика</li>
+                    <li class="badge-list__item badge-list__item--no">нет командного уровня</li>
+                  </ul>
+                </div>
+
+                <div class="callout callout--note">
+                  <span class="callout__icon" aria-hidden="true">
+                    <img src="./images/figma-473/icon-fixer.svg" alt="" />
+                  </span>
+                  <p class="callout__text">
+                    Вывод: удобен как “хранилище записей”, но не как инструмент работы с информацией
+                  </p>
+                </div>
+              </article>
+
+              <article class="bench-card">
+                <header class="bench-card__head">
+                  <span class="bench-card__logo" aria-hidden="true">
+                    <img src="./images/figma-473/bench-monica-logo.png" alt="Monica" />
+                  </span>
+                  <h5 class="bench-card__name">Monica</h5>
+                </header>
+
+                <figure class="bench-card__shot">
+                  <img
+                    class="bench-card__img"
+                    src="./images/figma-473/bench-monica-shot.png"
+                    alt="Интерфейс Monica"
+                  />
+                </figure>
+
+                <div class="bench-card__cols">
+                  <ul class="badge-list" aria-label="Плюсы">
+                    <li class="badge-list__item badge-list__item--ok">быстрый доступ к AI</li>
+                    <li class="badge-list__item badge-list__item--ok">простота и скорость</li>
+                    <li class="badge-list__item badge-list__item--ok">понятный ввод запроса</li>
+                  </ul>
+                  <ul class="badge-list" aria-label="Минусы">
+                    <li class="badge-list__item badge-list__item--no">нет контекста проектов и встреч</li>
+                    <li class="badge-list__item badge-list__item--no">не поддерживает командную работу</li>
+                    <li class="badge-list__item badge-list__item--no">не решает пост‑обработку встреч</li>
+                  </ul>
+                </div>
+
+                <div class="callout callout--note">
+                  <span class="callout__icon" aria-hidden="true">
+                    <img src="./images/figma-473/icon-fixer.svg" alt="" />
+                  </span>
+                  <p class="callout__text">Вывод: полезный инструмент, но вне контекста рабочих процессов</p>
+                </div>
+              </article>
+
+              <section class="summary" aria-label="Итого по бенчмаркингу">
+                <h5 class="summary__title">Итого</h5>
+
+                <div class="summary__row">
+                  <article class="summary-card">
+                    <h6 class="summary-card__title">Сводные выводы</h6>
+                    <ol class="summary-card__list">
+                      <li>Рынок не закрывает полный сценарий</li>
+                      <li>Основная проблема: пост-обработка встреч</li>
+                      <li><strong>Слабая структура данных</strong></li>
+                      <li><strong>AI не встроен в основной сценарий</strong></li>
+                    </ol>
+                  </article>
+
+                  <img
+                    class="summary__arrow"
+                    src="./images/figma-473/summary-arrow.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+
+                  <article class="summary-card">
+                    <h6 class="summary-card__title">Инсайты</h6>
+                    <ol class="summary-card__list">
+                      <li>Важно быстро находить информацию, а не просто записывать встречи</li>
+                      <li>AI должен быть частью основного сценария</li>
+                      <li>Простая структура критична для B2B</li>
+                    </ol>
+                  </article>
+                </div>
+
+                <article class="criteria">
+                  <h6 class="criteria__title">Критерии успеха</h6>
+                  <div class="criteria__grid">
+                    <ul class="criteria__list" aria-label="Снижаем">
+                      <li class="criteria__item">
+                        <img
+                          class="criteria__icon"
+                          src="./images/figma-473/icon-arrow-fat-down.svg"
+                          alt=""
+                        />
+                        <span>Время поиска информации</span>
+                      </li>
+                      <li class="criteria__item">
+                        <img
+                          class="criteria__icon"
+                          src="./images/figma-473/icon-arrow-fat-down.svg"
+                          alt=""
+                        />
+                        <span>Время на обработку встречи</span>
+                      </li>
+                    </ul>
+                    <ul class="criteria__list" aria-label="Повышаем">
+                      <li class="criteria__item">
+                        <img
+                          class="criteria__icon"
+                          src="./images/figma-473/icon-arrow-fat-down-up.svg"
+                          alt=""
+                        />
+                        <span>Использование AI</span>
+                      </li>
+                      <li class="criteria__item">
+                        <img
+                          class="criteria__icon"
+                          src="./images/figma-473/icon-arrow-fat-down-up.svg"
+                          alt=""
+                        />
+                        <span>Возврат пользователей</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </section>
+          </section>
+
+          <section class="case-subsection case-subsection--gap-24" aria-label="Гипотезы">
+            <h4 class="case-subsection__title case-subsection__title--xl">Гипотезы</h4>
+            <p class="case-text case-text--lead">На основе анализа интерфейса я сформулировала несколько гипотез</p>
+
+            <div class="hyp-grid">
+              <article class="hyp-card">
+                <header class="hyp-card__chip">
+                  <img
+                    class="hyp-card__chip-icon"
+                    src="./images/figma-473/icon-chats.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <h5 class="hyp-card__chip-title">Комментарии в рамках встречи</h5>
+                </header>
+                <p class="hyp-card__text">
+                  Если добавить комментарии внутри таймлайна встречи, пользователи смогут быстрее возвращаться к
+                  контексту обсуждения и фиксировать договорённости.
+                </p>
+              </article>
+
+              <article class="hyp-card">
+                <header class="hyp-card__chip">
+                  <img
+                    class="hyp-card__chip-icon"
+                    src="./images/figma-473/icon-star-four.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <h5 class="hyp-card__chip-title">AI как часть основного сценария</h5>
+                </header>
+                <p class="hyp-card__text">
+                  Если встроить AI в процесс работы со встречей (саммаризация, выделение тезисов), это сократит
+                  время обработки информации.
+                </p>
+              </article>
+
+              <article class="hyp-card">
+                <header class="hyp-card__chip">
+                  <img
+                    class="hyp-card__chip-icon"
+                    src="./images/figma-473/icon-folders.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <h5 class="hyp-card__chip-title">Структура: проекты и доступы</h5>
+                </header>
+                <p class="hyp-card__text">
+                  Если объединить встречи в проекты и настроить доступы, пользователям будет проще ориентироваться
+                  в данных и работать в команде.
+                </p>
+              </article>
+
+              <article class="hyp-card">
+                <header class="hyp-card__chip">
+                  <img
+                    class="hyp-card__chip-icon"
+                    src="./images/figma-473/icon-magnifying-glass.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <h5 class="hyp-card__chip-title">Поиск по содержанию встреч</h5>
+                </header>
+                <p class="hyp-card__text">
+                  Если реализовать поиск по расшифровке, пользователи смогут быстрее находить нужную информацию
+                  внутри диалогов.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="case-subsection case-subsection--gap-24" aria-label="Проверка гипотез">
+            <h4 class="case-subsection__title">Проверка гипотез</h4>
+            <div class="panel">
+              <p class="panel__lead">
+                Гипотезы были проверены на интерактивном прототипе через юзабилити-тестирование.
+              </p>
+
+              <section class="panel__block" aria-label="Метрики">
+                <h5 class="pill">Метрики:</h5>
+                <ul class="panel__list">
+                  <li>время поиска информации (Time to insight)</li>
+                  <li>успешность выполнения задачи</li>
+                  <li>использование AI-функций</li>
+                </ul>
+              </section>
+
+              <section class="panel__block" aria-label="Как проверялось">
+                <h5 class="pill">Как проверялось:</h5>
+                <p class="panel__text">
+                  Пользователи выполняли сценарии поиска информации и работы со встречей на прототипе.
+                </p>
+              </section>
+
+              <section class="panel__block" aria-label="Наблюдения">
+                <h5 class="pill">Наблюдения:</h5>
+                <ul class="panel__list">
+                  <li>Пользователи быстрее находят информацию при наличии поиска по содержанию</li>
+                  <li>AI-функции используются как основной инструмент для первичной обработки встречи</li>
+                  <li>Структура через проекты упрощает навигацию и понимание контекста</li>
+                </ul>
+              </section>
+            </div>
+          </section>
+        </section>
+
+        <section class="case-section case-section--implement" aria-label="Реализация">
+          <h3 class="case-section__title">Реализация</h3>
+
+          <section class="case-subsection" aria-label="Ui Kit и Дизайн-система">
+            <h4 class="case-subsection__title case-subsection__title--xl">Ui Kit и Дизайн-система</h4>
+            <p class="case-text case-text--lead">
+              При были учтены пожелания заказчиков - использовались синие, голубые, серые цвета
+            </p>
+            <figure class="case-image case-image--rounded-28">
+              <img
+                class="case-image__img"
+                src="./images/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F.png"
+                alt="UI Kit и дизайн-система"
+              />
+            </figure>
+            <p class="case-text case-text--lead">
+              Цветовая система построена на нейтральной тёмной базе с акцентным синим цветом, чтобы
+              снизить визуальную нагрузку и выделить ключевые действия.
+            </p>
+          </section>
+
+          <section class="case-subsection" aria-label="Решение Desktop">
+            <h4 class="case-subsection__title case-subsection__title--lg">
+              Решение Desktop (основные экраны)
+            </h4>
+
+            <section class="case-subsection" aria-label="Основной сценарий">
+              <h5 class="case-subsection__kicker">Основной сценарий cоздание и обработка встречи</h5>
+              <div class="case-text case-text--muted">
+                <p>
+                  На главном экране доступны действия для загрузки и создания встречи.<br />
+                  После выбора пользователь может добавить ссылку или загрузить файл в видео, аудио
+                  или текстовом формате.
+                </p>
+                <p>
+                  После загрузки или записи встреча автоматически обрабатывается.<br />
+                  Пользователь получает расшифровку, ключевые тезисы и задачи без ручного
+                  конспектирования.
+                </p>
+              </div>
+              <figure class="case-image case-image--rounded-21">
+                <img
+                  class="case-image__img"
+                  src="./images/Section%2031.png"
+                  alt="Основной сценарий"
+                />
+              </figure>
+              <p class="case-text case-text--muted">Также можно загрузить и начать встречу со страницы встреч</p>
+            </section>
+
+            <section class="case-subsection" aria-label="Сценарий поиска">
+              <h5 class="case-subsection__kicker">Сценарий поиска с помощью AI</h5>
+              <div class="case-text case-text--muted">
+                <p>
+                  Пользователь может получить краткое содержание, выделить ключевые моменты или задать
+                  вопрос по встрече.<br /><br />
+                  AI помогает быстрее разобраться в информации и сократить время на её обработку.
+                </p>
+                <p>Он не является отдельной функцией, а становится частью основного пользовательского сценария.</p>
+              </div>
+              <figure class="case-image case-image--rounded-23">
+                <img
+                  class="case-image__img"
+                  src="./images/%D0%B0%D0%B8.png"
+                  alt="Поиск с помощью AI"
+                />
+              </figure>
+            </section>
+
+            <section class="case-subsection" aria-label="Сценарий проекта">
+              <h5 class="case-subsection__kicker">Сценарий создания и редактирования проекта</h5>
+              <p class="case-text case-text--muted">
+                Проекты объединяют встречи и помогают сохранять контекст.<br />
+                Пользователь может редактировать настройки и управлять доступами.
+              </p>
+              <figure class="case-image case-image--rounded-20">
+                <img
+                  class="case-image__img"
+                  src="./images/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82.png"
+                  alt="Создание и редактирование проекта"
+                />
+              </figure>
+            </section>
+
+            <section class="case-subsection" aria-label="Сценарии встречи">
+              <h5 class="case-subsection__kicker">
+                Сценарии встречи: Поделится, Доступы, Экспортировать, Комментарии
+              </h5>
+              <p class="case-text case-text--muted">
+                Пользователь может делиться встречей, управлять доступами и экспортировать данные.<br />
+                Комментарии помогают фиксировать важные моменты в контексте записи.
+              </p>
+              <figure class="case-image">
+                <img
+                  class="case-image__img"
+                  src="./images/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0.png"
+                  alt="Сценарии встречи"
+                />
+              </figure>
+            </section>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
