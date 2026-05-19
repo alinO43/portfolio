@@ -961,35 +961,65 @@ article.project {
 
 @media (max-width: 760px) {
   .topbar {
-    width: calc(100% - 16px);
-    padding: 12px 12px 12px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: calc(100% - 32px);
+    height: auto;
+    padding: 16px;
+    border-radius: var(--radius-38);
+    background: rgba(255, 255, 255, 0.06);
+    margin: 16px auto 0;
+    top: 0;
+    overflow: visible;
+  }
+
+  .topbar__home {
+    width: 100%;
+    justify-content: center;
+    min-width: 0;
   }
 
   .topbar__name {
-    font-size: 18px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
   }
 
   .topbar__actions {
-    gap: 8px;
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 6px;
   }
 
   .button {
-    padding-inline: 12px;
+    gap: 4px;
+    padding: 8px 12px;
     font-size: 14px;
+    height: auto;
+    min-height: 0;
+  }
+
+  .button--primary {
+    height: auto;
+    padding: 8px 12px;
   }
 
   .button__icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 
   .button--primary .button__icon {
-    width: 20px;
-    height: 17px;
+    width: 16px;
+    height: 13px;
   }
 
   .page__main {
-    margin-top: 40px;
+    margin-top: 32px;
     margin-bottom: 80px;
     width: calc(100% - 24px);
     gap: 48px;
@@ -1054,25 +1084,22 @@ article.project {
 
 @media (max-width: 640px) {
   .topbar {
-    flex-wrap: wrap;
-    height: auto;
-    min-height: 68px;
-    row-gap: 10px;
-  }
-
-  .topbar__home {
-    min-width: 0;
-  }
-
-  .topbar__name {
-    white-space: normal;
-    line-height: 1.15;
+    width: calc(100% - 24px);
+    margin-top: 12px;
+    padding: 16px;
   }
 
   .topbar__actions {
-    width: 100%;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .button span {
+    font-size: 13px;
   }
 }
 
@@ -2199,7 +2226,7 @@ article.project {
   }
 
   .case {
-    margin-top: 72px;
+    margin-top: 32px;
     margin-bottom: 88px;
     width: calc(100% - 24px);
     max-width: 100%;

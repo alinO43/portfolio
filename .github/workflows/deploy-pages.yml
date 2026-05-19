@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir -p _site
           cp *.html styles.css favicon.svg landing.png _site/
+          cp Резюме.pdf _site/
           cp -r images icon assets _site/
 
       - name: Upload artifact
