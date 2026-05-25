@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS ITAM — кейс</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto+Flex:opsz,wght@8..144,573;8..144,773&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page">
+    <header class="topbar">
+      <a class="topbar__home" href="./index.html" aria-label="На главную">
+        <h1 class="topbar__name">Тотоева Алина</h1>
+      </a>
+      <nav class="topbar__actions" aria-label="Ссылки">
+        <a class="button button--download" href="#" target="_blank" rel="noreferrer">
+          <span>Dropfile</span>
+          <img class="button__icon" src="./icon/link.svg" alt="" />
+        </a>
+        <a class="button" href="./Резюме.pdf" download="Резюме.pdf">
+          <span>Резюме</span>
+          <img class="button__icon" src="./icon/Down.svg" alt="" />
+        </a>
+        <a class="button button--primary" href="https://t.me/alinO43" target="_blank" rel="noreferrer">
+          <span>AlinO34</span>
+          <img class="button__icon" src="./icon/Vector.svg" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="case case--detail">
+      <header class="case-hero case-hero--spaced">
+        <ul class="chip-row chip-row--start" aria-label="Теги проекта">
+          <li class="chip glass">UX/UI</li>
+          <li class="chip glass">Product</li>
+          <li class="chip glass">UX</li>
+          <li class="chip glass">Prompt engineer</li>
+        </ul>
+        <div class="case-hero__intro">
+          <h2 class="case-hero__title">
+            Как я проектировала LMS платформу для внеучебных курсов института
+          </h2>
+          <p class="case-hero__subtitle">
+            Платформа для неофициальных студенческих курсов для студенческих IT-объединений.
+            <br />
+            Ссылка на реализованный продукт:
+            <a
+              class="case-link"
+              href="https://edu.itatmisis.ru/"
+              target="_blank"
+              rel="noreferrer"
+              >https://edu.itatmisis.ru/</a
+            >
+          </p>
+          <figure class="case-hero__cover case-image case-image--rounded-30">
+            <img
+              class="case-image__img"
+              src="./assets/hero-cover.png"
+              alt="Обложка проекта LMS"
+            />
+          </figure>
+        </div>
+      </header>
+
+      <div class="case__content case__content--sections">
+        <section class="case-section" aria-labelledby="lms-task">
+          <h3 class="case-section__title" id="lms-task">Задача</h3>
+          <div class="case-section__stack">
+            <section class="case-subsection case-subsection--tight" aria-label="Контекст">
+              <h4 class="case-subsection__title">Контекст</h4>
+              <div class="case-text case-text--stack">
+                <p>
+                  В МИСИС студенты часто самостоятельно проводят курсы для других студентов, в основном
+                  связанные с IT. Поскольку это новая практика для вузов, пока не существует
+                  регулируемой платформы для таких курсов, где можно было бы размещать записи занятий и
+                  собирать статистику.
+                </p>
+                <p>
+                  Такая платформа позволила бы студентам из других вузов также смотреть курсы и
+                  записываться на занятия. Кроме того, благодаря статистике и накопленному опыту
+                  преподаватели-студенты могли бы получать дополнительные бонусы и поддержку от
+                  университета.
+                </p>
+              </div>
+            </section>
+
+            <div class="case-photo-stack" aria-hidden="true">
+              <div class="case-photo-row">
+                <figure class="case-image">
+                  <img
+                    class="case-image__img"
+                    src="./assets/context-photo-1.jpg"
+                    alt=""
+                  />
+                </figure>
+                <figure class="case-image">
+                  <img
+                    class="case-image__img"
+                    src="./assets/context-photo-2.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <figure class="case-photo-wide case-image">
+                <img
+                  class="case-image__img"
+                  src="./assets/context-photo-wide.jpg"
+                  alt=""
+                />
+              </figure>
+            </div>
+
+            <section class="case-subsection case-subsection--tight" aria-label="Формулировка задачи">
+              <h4 class="case-subsection__title">Задача</h4>
+              <p class="case-text">
+                Спроектировать LMS платформу для курсов МИСИС, которые проводятся от студентов для
+                студентов.
+              </p>
+            </section>
+
+            <section class="case-subsection case-subsection--tight" aria-label="Проблема">
+              <h4 class="case-subsection__title">Проблема</h4>
+              <p class="case-text">
+                Большое количество информации хаотично хранится на различных ресурсах, а процесс
+                публикации курсов и материалов затруднён. Это усложняет доступ к контенту и снижает
+                потенциальное количество участников курсов.
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <section class="case-section case-section--research" aria-labelledby="lms-research">
+          <h3 class="case-section__title" id="lms-research">Исследование</h3>
+          <div class="case-section__stack">
+            <section class="case-subsection case-subsection--gap-24" aria-label="ЦА">
+              <h4 class="case-subsection__title case-subsection__title--xl">ЦА</h4>
+              <p class="case-text">
+                Целевой аудиторией являются студенты 1–3 курсов. Первый курс в основном выступает в роли
+                обучающихся, второй и третий чаще — в роли преподавателей.
+              </p>
+            </section>
+
+            <section class="case-subsection case-subsection--gap-24" aria-label="Инсайты">
+              <h4 class="case-subsection__title case-subsection__title--xl">Формирование инсайтов</h4>
+              <p class="case-text">
+                Ведущие студенческие курсы запускаются в основном на инициативе студентов. За свои усилия
+                преподаватели получают небольшие баллы по отдельным предметам и мерч от студенческого
+                объединения. При этом у тех, кто приходит на курсы как на любой бесплатный продукт,
+                мотивация часто быстро снижается, а неудобство и сложность платформы могут отпугнуть ещё
+                сильнее. Также один человек обычно состоит сразу в нескольких курсах: занятия чаще всего
+                проходят в разные даты, но иногда могут пересекаться.
+              </p>
+              <div class="callout callout--tight">
+                <span class="callout__icon" aria-hidden="true">
+                  <img
+                    src="./assets/icon-fixer.svg"
+                    alt=""
+                  />
+                </span>
+                <p class="callout__text">Платформа должна быть максимально простой и не обязывающей.</p>
+              </div>
+            </section>
+          </div>
+
+            <section class="case-subsection case-subsection--flush lms-research-bench" aria-label="Бенчмаркинг">
+              <div class="lms-col-32">
+                <div class="lms-col-24">
+                  <h4 class="case-subsection__title case-subsection__title--xl">Бенчмаркинг</h4>
+                  <div class="case-text case-text--muted case-text--stack">
+                    <p>
+                      При анализе рынка я взяла некоторые платформы, которые используют как университеты, так и
+                      частные лица для самостоятельного обучения. Я рассмотрела Moodle, BBE, VK Education.
+                    </p>
+                    <p>
+                      Анализ существующих образовательных платформ показал, что большинство из них построены
+                      вокруг формальной модели обучения. В таких системах преподаватели обязаны публиковать
+                      полный набор материалов, а обучение предполагает последовательное прохождение курса.
+                    </p>
+                  </div>
+                </div>
+
+              <div class="hyp-grid">
+                <article class="hyp-card">
+                  <header class="hyp-card__chip hyp-card__chip--rose">
+                    <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">
+                      Обычно для таких платформ<br />
+                      характерно:
+                    </h5>
+                  </header>
+                  <ul class="case-list">
+                    <li>преподаватели получают оплату и обязаны готовить структурированные материалы</li>
+                    <li>курс включает лекции, задания, тесты и записи занятий</li>
+                    <li>пользователь проходит курс последовательно, изучая весь контент</li>
+                  </ul>
+                </article>
+                <article class="hyp-card">
+                  <header class="hyp-card__chip hyp-card__chip--mint">
+                    <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">
+                      Для нашей платформы<br />
+                      характерно:
+                    </h5>
+                  </header>
+                  <ul class="case-list">
+                    <li>
+                      преподаватели публикуют материалы в том объёме, в котором считают нужным
+                    </li>
+                    <li>не у всех курсов есть подробные лекции или записи занятий</li>
+                    <li>взаимодействие между участниками менее формальное</li>
+                    <li>основное использование платформы связано с организацией курса</li>
+                  </ul>
+                </article>
+              </div>
+
+              <p class="case-text">
+                Поэтому стандартный user flow образовательных LMS не подходит для нашего проекта.
+                Платформа выполняет скорее организационную функцию, объединяя информацию о студенческих
+                курсах и обеспечивая базовые инструменты для взаимодействия между студентами и
+                преподавателями.
+              </p>
+
+                <div class="lms-col-24">
+                  <h4 class="case-subsection__title case-subsection__title--xl">User Flow</h4>
+                  <figure class="case-flow-img case-image">
+                    <img
+                      class="case-image__img"
+                      src="./assets/user-flow.png"
+                      alt="Диаграмма пользовательских сценариев"
+                    />
+                  </figure>
+                  <div class="callout callout--tight">
+                    <span class="callout__icon" aria-hidden="true">
+                      <img
+                        src="./assets/icon-fixer.svg"
+                        alt=""
+                      />
+                    </span>
+                    <p class="callout__text">
+                      Сокращение user flow, упрощение публикации контента и его просмотра, учёт лёгкости и
+                      неформальности общения и специфики сообщества.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </section>
+
+        <section class="case-section case-section--hypotheses" aria-labelledby="lms-hyp">
+          <div class="case-hyp-head">
+            <h3 class="case-section__title case-section__title--32" id="lms-hyp">Гипотезы</h3>
+            <p class="case-text">
+              На основе анализа интерфейса я сформулировала несколько гипотез, направленных на упрощение
+              сценария и повышение конверсии в ключевое действие.
+            </p>
+            <div class="hyp-grid">
+            <article class="hyp-card">
+              <header class="hyp-card__chip">
+                <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">Информация о занятии</h5>
+              </header>
+              <p class="hyp-card__text">
+                На главной странице должна быть заметная плашка с информацией о следующем занятии и
+                аудитории, а также новости о мероприятиях клуба, к которому относится курс, с последними
+                выложенными занятиями.
+              </p>
+            </article>
+            <article class="hyp-card">
+              <header class="hyp-card__chip">
+                <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">Обновления по курсу</h5>
+              </header>
+              <p class="hyp-card__text">
+                Разместить на странице курса блок «Обновления» с последними занятиями, комментариями к
+                заданиям и другими актуальными изменениями, чтобы пользователь сразу видел, что нового.
+              </p>
+            </article>
+            <article class="hyp-card">
+              <header class="hyp-card__chip">
+                <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">
+                  Дропдаун в сайдбаре между курсами
+                </h5>
+              </header>
+              <p class="hyp-card__text">
+                Добавить переключение дропдаун между «мои курсы» в сайдбаре.
+              </p>
+            </article>
+            <article class="hyp-card">
+              <header class="hyp-card__chip">
+                <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">Чат в домашке</h5>
+              </header>
+              <p class="hyp-card__text">
+                Организовать проверку домашних работ в формате чата: при открытии домашнего задания
+                появляется чат, куда можно прикрепить работу и получить обратную связь сообщением.
+              </p>
+            </article>
+            <article class="hyp-card">
+              <header class="hyp-card__chip">
+                <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">Сайдбар занятий</h5>
+              </header>
+              <p class="hyp-card__text">
+                Раздел с занятиями сделать с отдельным сайдбаром — отдельное пространство с внутренней
+                навигацией.
+              </p>
+            </article>
+            <article class="hyp-card">
+              <header class="hyp-card__chip">
+                <h5 class="hyp-card__chip-title hyp-card__chip-title--wrap">Календарь</h5>
+              </header>
+              <p class="hyp-card__text">
+                На общей странице добавить календарь всех курсов с фильтрами: «все курсы», конкретный
+                курс, «мои курсы», «домашки».
+              </p>
+            </article>
+            <article class="hyp-card hyp-card--span-all">
+              <header class="hyp-card__chip">
+                <h5 class="hyp-card__chip-title">Кастомизация</h5>
+              </header>
+              <p class="hyp-card__text">
+                Сделать кастомизацию курсов: у каждого клуба, который создаёт курс, свой цвет, чтобы
+                пользователь мог визуально отличать разные курсы.
+              </p>
+            </article>
+            </div>
+          </div>
+
+          <section class="case-subsection case-subsection--gap-24" aria-label="Проверка гипотез">
+            <h4 class="case-subsection__title">Проверка гипотез</h4>
+            <div class="case-text case-text--stack">
+              <p>
+                Я сделала вайрфрейм и провела качественное тестирование на 6 преподавателей различных
+                курсов, в том числе преподавателей курсов по проге, дизайну, 3D, менеджменту.
+              </p>
+              <p>Итоговые выводы были применены на экранах и вышло следующее.</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="case-section case-section--implement" aria-labelledby="lms-impl">
+          <h3 class="case-section__title" id="lms-impl">Реализация после согласования (№101)</h3>
+
+          <section class="case-subsection" aria-label="Главная страница">
+            <h4 class="case-subsection__title case-subsection__title--xl">Внешний вид главной страницы</h4>
+            <div class="lms-flow-24">
+              <figure class="case-flow-img case-image">
+                <img
+                  class="case-image__img"
+                  src="./assets/screen-main.png"
+                  alt="Макет главной страницы"
+                />
+              </figure>
+              <p class="case-result">
+                <span class="case-result__icon" aria-hidden="true">✅</span>
+                <span class="case-result__label">Календарь</span>
+              </p>
+            </div>
+          </section>
+
+          <section class="case-subsection" aria-label="Страница курса">
+            <h4 class="case-subsection__title case-subsection__title--xl">Внешний вид главной страницы курса</h4>
+            <div class="lms-course-body">
+              <div class="lms-flow-24">
+                <figure class="case-flow-img case-image">
+                  <img
+                    class="case-image__img"
+                    src="./assets/screen-course.png"
+                    alt="Макет страницы курса"
+                  />
+                </figure>
+                <div class="case-photo-row">
+                  <figure class="case-image">
+                    <img
+                      class="case-image__img"
+                      src="./assets/screen-course-detail-1.png"
+                      alt=""
+                    />
+                  </figure>
+                  <figure class="case-image">
+                    <img
+                      class="case-image__img"
+                      src="./assets/screen-course-detail-2.png"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="case-result-list">
+                  <p class="case-result">
+                    <span class="case-result__icon" aria-hidden="true">✅</span>
+                    <span class="case-result__label">Переключение между «моими курсами» в сайдбаре</span>
+                  </p>
+                  <p class="case-result">
+                    <span class="case-result__icon" aria-hidden="true">✅</span>
+                    <span class="case-result__label">Обновление по курсу</span>
+                  </p>
+                  <p class="case-result">
+                    <span class="case-result__icon" aria-hidden="true">✅</span>
+                    <span class="case-result__label">Время и дата трансляции или аудитория, если офлайн</span>
+                  </p>
+                </div>
+              </div>
+              <div class="lms-flow-24">
+                <figure class="case-flow-img case-image">
+                  <img
+                    class="case-image__img"
+                    src="./assets/screen-course-custom.png"
+                    alt="Дополнительный макет курса"
+                  />
+                </figure>
+                <div class="case-result-annotation">
+                  <p class="case-result case-result--bad">
+                    <span class="case-result__icon" aria-hidden="true">❌</span>
+                    <span class="case-result__label">Кастомизация</span>
+                  </p>
+                  <p class="case-text">
+                    Сложность реализации; оказалось не нужным для преподавателей — после некоторого времени
+                    интерес угасает, кастомизацией интересуются единицы.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-subsection" aria-label="Домашние задания">
+            <h4 class="case-subsection__title case-subsection__title--xl">
+              Коммуникация и домашние задания
+            </h4>
+            <div class="lms-col-32">
+              <div class="lms-flow-24">
+                <figure class="case-flow-img case-image">
+                  <img
+                    class="case-image__img"
+                    src="./assets/screen-homework.png"
+                    alt="Макет раздела с домашними заданиями"
+                  />
+                </figure>
+                <div class="case-result-annotation">
+                  <p class="case-result case-result--bad">
+                    <span class="case-result__icon" aria-hidden="true">❌</span>
+                    <span class="case-result__label">Связь со студентами по ДЗ в виде чата</span>
+                  </p>
+                  <p class="case-text">
+                    Лёгкость коммуникации может вылиться в спам или частые короткие сообщения, перегружать
+                    сервер — отказались от такого формата и сделали одноразовую отправку сообщения.
+                  </p>
+                </div>
+              </div>
+              <div class="lms-flow-24">
+                <div class="case-photo-row">
+                  <figure class="case-image">
+                    <img
+                      class="case-image__img"
+                      src="./assets/screen-homework-chat-1.png"
+                      alt=""
+                    />
+                  </figure>
+                  <figure class="case-image">
+                    <img
+                      class="case-image__img"
+                      src="./assets/screen-homework-chat-2.png"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="case-result-annotation">
+                  <p class="case-result">
+                    <span class="case-result__icon" aria-hidden="true">✅</span>
+                    <span class="case-result__label">Единоразовая отправка ответа</span>
+                  </p>
+                  <p class="case-text">
+                    Лёгкость коммуникации могла бы вылиться в спам — поэтому выбрали одноразовую отправку
+                    сообщения.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-subsection" aria-label="Страница занятия">
+            <h4 class="case-subsection__title case-subsection__title--xl">Страница занятия</h4>
+            <div class="lms-flow-24">
+              <figure class="case-flow-img case-image">
+                <img
+                  class="case-image__img"
+                  src="./assets/screen-lesson.png"
+                  alt="Макет страницы занятия"
+                />
+              </figure>
+              <div class="case-result-annotation">
+                <p class="case-result case-result--bad">
+                  <span class="case-result__icon" aria-hidden="true">❌</span>
+                  <span class="case-result__label">Сайдбар для занятия</span>
+                </p>
+                <p class="case-text">
+                  По статистике большинство преподавателей не публикуют много информации в текстовом
+                  формате — решили убрать навигацию.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="case-section case-section--other-screens" aria-labelledby="lms-more">
+          <h3 class="case-section__title" id="lms-more">Другие экраны</h3>
+          <div class="case-screen-grid">
+            <div class="case-screen">
+              <img
+                class="case-screen__img"
+                src="./assets/screen-profile.png"
+                alt="Личный кабинет"
+              />
+              <p class="case-screen__caption">Личный кабинет</p>
+            </div>
+            <div class="case-screen">
+              <img
+                class="case-screen__img"
+                src="./assets/screen-stats.png"
+                alt="Статистика"
+              />
+              <p class="case-screen__caption">Статистика</p>
+            </div>
+            <div class="case-screen">
+              <img
+                class="case-screen__img"
+                src="./assets/screen-about.png"
+                alt="О курсе"
+              />
+              <p class="case-screen__caption">О курсе</p>
+            </div>
+            <div class="case-screen">
+              <img
+                class="case-screen__img"
+                src="./assets/screen-calendar.png"
+                alt="Календарь"
+              />
+              <p class="case-screen__caption">Календарь</p>
+            </div>
+            <div class="case-screen case-screen--span">
+              <img
+                class="case-screen__img"
+                src="./assets/screen-calls.png"
+                alt="Звонки и трансляция"
+              />
+              <p class="case-screen__caption">Звонки/трансляция</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "rehcjh",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Статический портфолио-сайт (HTML + CSS). Открывайте index.html в браузере или запустите локальный сервер.",
+  "scripts": {
+    "start": "python3 -m http.server 8080"
+  }
+}

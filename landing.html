@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лэндинг — кейс</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto+Flex:opsz,wght@8..144,573;8..144,773&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="page">
+    <header class="topbar">
+      <a class="topbar__home" href="./index.html" aria-label="На главную">
+        <h1 class="topbar__name">Тотоева Алина</h1>
+      </a>
+      <nav class="topbar__actions" aria-label="Ссылки">
+        <a class="button button--download" href="#" target="_blank" rel="noreferrer">
+          <span>Dropfile</span>
+          <img class="button__icon" src="./icon/link.svg" alt="" />
+        </a>
+        <a class="button" href="./Резюме.pdf" download="Резюме.pdf">
+          <span>Резюме</span>
+          <img class="button__icon" src="./icon/Down.svg" alt="" />
+        </a>
+        <a class="button button--primary" href="https://t.me/alinO43" target="_blank" rel="noreferrer">
+          <span>AlinO34</span>
+          <img class="button__icon" src="./icon/Vector.svg" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="case case--detail case--landing">
+      <header class="case-hero case-hero--spaced">
+        <ul class="chip-row chip-row--start" aria-label="Теги проекта">
+          <li class="chip glass">UX/UI</li>
+          <li class="chip glass">Product</li>
+          <li class="chip glass">UX</li>
+          <li class="chip glass">Prompt engineer</li>
+        </ul>
+        <div class="case-hero__intro">
+          <h2 class="case-hero__title">Лэндинг</h2>
+          <p class="case-hero__subtitle">
+            Разработать лэндинг для сервиса проверки мошенников сбора данных для судов защиты
+            персональных данных
+            <br />
+            Ссылка на реализованный продукт
+            <a
+              class="case-link"
+              href="https://find-landing-zeta.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              >https://find-landing-zeta.vercel.app/</a
+            >
+          </p>
+          <figure class="case-hero__cover case-image case-image--rounded-30">
+            <img
+              class="case-image__img"
+              src="./images/landing/hero-cover.png"
+              alt="Обложка лэндинга FIND Analytics на ноутбуке"
+            />
+          </figure>
+        </div>
+      </header>
+
+      <figure class="case-landing__scroll case-image case-image--rounded-30">
+        <img
+          class="case-image__img"
+          src="./landing.png"
+          alt="Полный макет лэндинга FIND Analytics"
+        />
+      </figure>
+    </main>
+  </body>
+</html>
