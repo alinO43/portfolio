@@ -1824,12 +1824,12 @@ article.project {
 
 .badge-list__item--ok::before {
   background-color: rgba(0, 255, 77, 0.18);
-  background-image: url("images/bench/check.svg");
+  background-image: url("./images/bench/check.svg");
 }
 
 .badge-list__item--no::before {
   background-color: rgba(255, 170, 0, 0.18);
-  background-image: url("images/bench/x.svg");
+  background-image: url("./images/bench/x.svg");
   background-size: 20px 20px;
 }
 
