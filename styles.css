@@ -1824,12 +1824,20 @@ article.project {
 
 .badge-list__item--ok::before {
   background-color: rgba(0, 255, 77, 0.18);
+<<<<<<< HEAD
   background-image: url("./images/bench/check.svg");
+=======
+  background-image: url("images/bench/check.svg");
+>>>>>>> 7e3ce6f11b4dc35291946d80e8104933c69e7214
 }
 
 .badge-list__item--no::before {
   background-color: rgba(255, 170, 0, 0.18);
+<<<<<<< HEAD
   background-image: url("./images/bench/x.svg");
+=======
+  background-image: url("images/bench/x.svg");
+>>>>>>> 7e3ce6f11b4dc35291946d80e8104933c69e7214
   background-size: 20px 20px;
 }
 
